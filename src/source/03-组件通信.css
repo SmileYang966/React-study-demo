@@ -1,0 +1,22 @@
+.tabBarControlStyle{
+    display: flex;
+}
+
+.tabBarItemStyle{
+    flex: 1;
+    text-align: center;
+}
+
+.tabBarItemStyle span{
+    padding: 5px 8px;
+}
+
+/* 是tabBarItemStyle,并且同时是active */
+.tabBarItemStyle.active{
+    color: red;
+}
+
+.tabBarItemStyle.active span{
+    border-bottom: 3px solid red;
+}
+
