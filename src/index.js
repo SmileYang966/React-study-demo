@@ -5,7 +5,9 @@ import './index.css';
 // import App from './source/02-子传父-函数传递'
 // import App from './source/03-组件通信的案例';
 // import App from './source/04-React实现slot/04-React实现slot'
-import App from './source/05-React实现跨组件通信/App';
+// import App from './source/05-React实现跨组件通信/App';
+// import App from './source/06-React性能优化/列表中key的作用';
+import App from './source/06-React性能优化/02-组件嵌套的render调用-PureComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
