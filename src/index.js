@@ -9,7 +9,7 @@ import './index.css';
 // import App from './source/06-React性能优化/列表中key的作用';
 // import App from './source/06-React性能优化/02-组件嵌套的render调用-PureComponent';
 // import App from './source/08-受控和非受控组件/01-ref的使用';
-import App from './source/08-受控和非受控组件/03-非受控组件';
+import App from './source/09-高阶组件/01-高阶组件的定义方式';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
