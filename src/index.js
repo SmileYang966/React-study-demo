@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+// 引用一下css 
+import './source/css/index.css'
 // import App from './source/01-父传子-PropTypes参数验证';
 // import App from './source/02-子传父-函数传递'
 // import App from './source/03-组件通信的案例';
@@ -12,7 +15,8 @@ import './index.css';
 // import App from './source/09-高阶组件/01-高阶组件的定义方式';
 // import App from './source/09-高阶组件/04-高阶组件的应用-增强props-改进';
 // import App from './source/09-高阶组件/06-高阶组件-生命周期劫持'
-import App from './source/10-组件内容补充/01-ref的转发'
+// import App from './source/10-组件内容补充/01-ref的转发'
+import App from './source/10-组件内容补充/02-portals的使用'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
