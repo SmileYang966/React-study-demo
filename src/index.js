@@ -11,7 +11,8 @@ import './index.css';
 // import App from './source/08-受控和非受控组件/01-ref的使用';
 // import App from './source/09-高阶组件/01-高阶组件的定义方式';
 // import App from './source/09-高阶组件/04-高阶组件的应用-增强props-改进';
-import App from './source/09-高阶组件/06-高阶组件-生命周期劫持'
+// import App from './source/09-高阶组件/06-高阶组件-生命周期劫持'
+import App from './source/10-组件内容补充/01-ref的转发'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
