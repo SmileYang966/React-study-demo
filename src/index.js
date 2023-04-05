@@ -16,12 +16,16 @@ import './source/css/index.css'
 // import App from './source/09-高阶组件/04-高阶组件的应用-增强props-改进';
 // import App from './source/09-高阶组件/06-高阶组件-生命周期劫持'
 // import App from './source/10-组件内容补充/01-ref的转发'
-import App from './source/10-组件内容补充/03-fragments的使用'
+// import App from './source/10-组件内容补充/03-fragments的使用'
+import App from './source/10-组件内容补充/04-StrickMode'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // strickMode会检查哪些内容？
+  //
+  //
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
