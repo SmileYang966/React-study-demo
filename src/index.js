@@ -17,7 +17,8 @@ import './source/css/index.css'
 // import App from './source/09-高阶组件/06-高阶组件-生命周期劫持'
 // import App from './source/10-组件内容补充/01-ref的转发'
 // import App from './source/10-组件内容补充/03-fragments的使用'
-import App from './source/10-组件内容补充/04-StrickMode'
+// import App from './source/10-组件内容补充/04-StrickMode'
+import App from './source/11-React样式/02-普通样式/app'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

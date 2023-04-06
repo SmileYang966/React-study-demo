@@ -1,0 +1,11 @@
+/* 后代选择器 */
+/* #app .title{
+  font-size:40px;
+  color: cadetblue;
+} */
+
+/* 直接后代 */
+#app > .title{
+  font-size:40px;
+  color: cadetblue;
+}
