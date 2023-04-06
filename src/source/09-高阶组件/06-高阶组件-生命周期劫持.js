@@ -1,6 +1,6 @@
 import React, { PureComponent,Component } from 'react'
 
-
+//WrappedComponent，传入的组件，进行高阶组件的功能性enhancement
 function withRenderTime(WrappedComponent){
   return class extends PureComponent{
     componentDidMount(){
