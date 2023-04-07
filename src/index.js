@@ -18,7 +18,7 @@ import './source/css/index.css'
 // import App from './source/10-组件内容补充/01-ref的转发'
 // import App from './source/10-组件内容补充/03-fragments的使用'
 // import App from './source/10-组件内容补充/04-StrickMode'
-import App from './source/11-React样式/03-css-modules/app'
+import App from './source/11-React样式/04-css-in-js/app'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
