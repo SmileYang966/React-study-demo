@@ -19,7 +19,7 @@ import './source/css/index.css'
 // import App from './source/10-组件内容补充/03-fragments的使用'
 // import App from './source/10-组件内容补充/04-StrickMode'
 // import App from './source/11-React样式/04-css-in-js/app'
-import App from './source/12-Ant designn/01-classnames/index'
+import App from './source/12-Ant designn/02-Ant-design初识/index'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
