@@ -8,6 +8,10 @@ export default class index extends PureComponent {
     return (
       <div>
         <CSSTransitionDemo/>
+        <hr/>
+        <SwitchTransitionDemo/>
+        <hr/>
+        <TransitionGroupDemo/>
       </div>
     )
   }
