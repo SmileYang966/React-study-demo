@@ -19,7 +19,8 @@ import './source/css/index.css'
 // import App from './source/10-组件内容补充/03-fragments的使用'
 // import App from './source/10-组件内容补充/04-StrickMode'
 // import App from './source/11-React样式/04-css-in-js/app'
-import App from './source/14-React过渡动画/index'
+// import App from './source/14-React过渡动画/index'
+import App from './source/16-react-redux/index.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
