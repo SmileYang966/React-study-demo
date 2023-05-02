@@ -2,20 +2,29 @@ import React, { PureComponent } from 'react'
 import Home from './src/Home'
 import About from './src/About'
 import Home1 from './src/Home1'
+import Home2 from './src/Home2'
+import About2 from './src/About2'
 
+import { Provider } from 'react-redux'
 import StoreContext from './utils/context'
 import store from './store'
 
 export default class App extends PureComponent {
   render() {
     return (
-      <StoreContext.Provider value={store}>
-        <Home/>
+      // <StoreContext.Provider value={store}>
+      //   <Home/>
+      //   <hr/>
+      //   <About/>
+      //   <hr/>
+      //   <Home1/>
+      // </StoreContext.Provider>
+
+      <Provider store={store}>
+        <Home2/>
         <hr/>
-        <About/>
-        <hr/>
-        <Home1/>
-      </StoreContext.Provider>
+        <About2/>
+      </Provider>
     )
   }
 }
