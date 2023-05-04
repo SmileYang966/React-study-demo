@@ -10,6 +10,8 @@ import StoreContext from './utils/context'
 import store from './store'
 import Home3 from './src/Home3'
 import About3 from './src/About3'
+import Home4 from './src/Home4-redux-thunk使用'
+import About4 from './src/About4'
 
 export default class App extends PureComponent {
   render() {
@@ -26,10 +28,16 @@ export default class App extends PureComponent {
         <Home2/>
         <hr/>
         <About2/>
-        <h2>Home3</h2>
+        
+        {/* <h2>Home3</h2>
         <Home3/>
         <h2>About3</h2>
-        <About3/>
+        <About3/> */}
+
+        <h2>Home4</h2>
+        <Home4/>
+        <h2>About4</h2>
+        <About4/>
       </Provider>
     )
   }
