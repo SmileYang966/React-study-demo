@@ -8,6 +8,8 @@ import About2 from './src/About2'
 import { Provider } from 'react-redux'
 import StoreContext from './utils/context'
 import store from './store'
+import Home3 from './src/Home3'
+import About3 from './src/About3'
 
 export default class App extends PureComponent {
   render() {
@@ -24,6 +26,10 @@ export default class App extends PureComponent {
         <Home2/>
         <hr/>
         <About2/>
+        <h2>Home3</h2>
+        <Home3/>
+        <h2>About3</h2>
+        <About3/>
       </Provider>
     )
   }
