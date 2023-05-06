@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function foo(){
+      console.log("foo");
+    }
+
+    foo(); 
+
+    // 定义一个生成器函数,函数名前加 * 
+    function *foo1(){
+      console.log("111");
+      yield "Evan"
+      console.log("222");
+      yield "Yang"
+      console.log("333");
+      yield 22
+    }
+    const result = foo1();
+    console.log("result is ",result);
+
+    const res1 = result.next();
+    console.log("res1 is ",res1);
+    const res2 = result.next();
+    console.log("res2 is ",res2);
+
+    // generator和promise一起使用
+    function *bar(){
+      const result = yield new Promise((resolve,reject)=>{
+        setTimeout(() => {
+          resolve("Hello world")
+        }, 3000);
+      }).then(res=>{
+        console.log("res is ",res);
+      })
+    }
+
+    const it = bar();
+    const barResult1 = it.next().value.then(res=>{
+      console.log("res is ",JSON.stringify(res));
+      it.next(res);
+    });
+    
+
+  </script>
+  <div>
+    www
+  </div>
+</body>
+</html>
