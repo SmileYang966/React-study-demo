@@ -13,9 +13,6 @@ export default class App extends PureComponent {
       <div>
         <Button type="primary">Primary Button</Button>
         <Button>Default Button</Button>
-        {/* <Button type="dashed" style={{width:200,height:40,backgroundColor:'green'}}>
-          <span style={{color:'white',fontSize:19}}>Dashed Button</span>
-        </Button> */}
         <Button type="text">Text Button</Button>
         <Button type="link">Link Button</Button>
         <div style={{width:40,height:40,alignItems:'center',justifyContent:'center',display:'flex'}}>

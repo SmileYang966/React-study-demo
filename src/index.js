@@ -22,7 +22,8 @@ import './source/css/index.css'
 // import App from './source/14-React过渡动画/index'
 // import App from './source/16-react-redux/index.js'
 // import App from './source/17-devtools-saga-reducer拆分/index'
-import App from './source/18-中间件原理/index';
+// import App from './source/18-中间件原理/index';
+import App from './source/19-react-redux-reducer拆分/index';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
