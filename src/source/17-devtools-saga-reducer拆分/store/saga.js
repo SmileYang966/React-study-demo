@@ -16,7 +16,7 @@ function *mySaga(){
 // 总结：步骤6-定义一个生成器函数fetchHomeMultiData生成器函数，yield all定义一个数组，执行所有的生成器函数
 function *fetchHomeMultiData(){
   const result = yield axios({
-    url:'https://mockapi.eolink.com/U6CZxWM9cedf95a49b4284e3e1a7985c53f89a9ccda5d45/home/multidata?responseId=1233072',
+    url:'https://mockapi.eolink.com/n7sRtWC2e04098bceaaeb69884a16f1839c565fc52d7804/home/multidata?responseId=1207149',
   });
   console.log("result is ",result);
   const recommends = result.data.totalData.recommends;

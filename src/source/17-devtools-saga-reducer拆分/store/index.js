@@ -11,8 +11,8 @@ import mySaga from './saga.js';
 import reducer from './reducer.js'
 
 //如果当前浏览器有安装redux-devtools，就会取值window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__,否则会取值compose 
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({trace:true}) || compose;
-// composeEnhancer.trace = true;
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+composeEnhancer.trace = true;
 
 // 创建其它的中间件
 // 总结：步骤2-创建createSagaMiddleware这个函数
