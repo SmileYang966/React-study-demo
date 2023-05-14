@@ -4,6 +4,9 @@ import Home from './pages/Home'
 import Mine from './pages/Mine'
 import { BrowserRouter, Route, Link, HashRouter, Routes, NavLink } from 'react-router-dom'
 import './App.css'
+import NoMatch from './pages/NoMatch'
+import Login from './pages/Login'
+import User from './pages/User'
 
 export default class index extends PureComponent {
   render() {
@@ -36,11 +39,17 @@ export default class index extends PureComponent {
           <NavLink to="/">首页</NavLink>
           <NavLink to="/About">关于</NavLink>
           <NavLink to="/Mine">我的</NavLink>
+          <NavLink to="/Login">登录</NavLink>
+          <NavLink to="/User">用户</NavLink>
 
+          {/* 使用Routes来包含所有的Route，默认只匹配一个 */}
           <Routes>
             <Route exact path="/" Component={Home}/>
             <Route path="/About" Component={About}/>
             <Route path="/Mine" Component={Mine}/>
+            <Route path='/Login' Component={Login}/>
+            <Route path='/User' Component={User}/>
+            <Route Component={NoMatch}/>
           </Routes>
         </BrowserRouter>
       </div>
