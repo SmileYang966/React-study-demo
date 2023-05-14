@@ -25,6 +25,8 @@ import './source/css/index.css'
 // import App from './source/18-中间件原理/index';
 // import App from './source/19-react-redux-reducer拆分/index';
 import App from './source/20-react-router的使用/index'
+import { BrowserRouter} from 'react-router-dom'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -33,6 +35,8 @@ root.render(
   //
   //
   // <React.StrictMode>
+  <BrowserRouter>
     <App />
+  </BrowserRouter>
   // </React.StrictMode>
 );
