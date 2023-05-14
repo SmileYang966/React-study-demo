@@ -44,12 +44,13 @@ export default class index extends PureComponent {
 
           {/* 使用Routes来包含所有的Route，默认只匹配一个 */}
           <Routes>
-            <Route exact path="/" Component={Home}/>
-            <Route path="/About" Component={About}/>
-            <Route path="/Mine" Component={Mine}/>
-            <Route path='/Login' Component={Login}/>
-            <Route path='/User' Component={User}/>
-            <Route Component={NoMatch}/>
+            <Route exact path="/" element={<Home/>}/>
+            {/* 子路由，需要加上/*     */}
+            <Route path="/About/*" element={<About/>}/>
+            <Route path="/Mine" element={<Mine/>}/>
+            <Route path='/Login' element={<Login/>}/>
+            <Route path='/User' element={<User/>}/>
+            <Route element={<NoMatch/>}/>
           </Routes>
         </BrowserRouter>
       </div>

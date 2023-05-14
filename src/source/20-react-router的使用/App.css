@@ -2,3 +2,8 @@ a.active{
   color:red;
   font-size: 20;
 }
+
+a.nav-link-activated{
+  color:blue;
+  font-size: 35;
+}
