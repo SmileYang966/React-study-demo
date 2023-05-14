@@ -8,6 +8,7 @@ import NoMatch from './pages/NoMatch'
 import Login from './pages/Login'
 import User from './pages/User'
 import ProductList from './pages/ProductList'
+import Detail from './pages/Detail'
 
 function App(){
   let navigate = useNavigate();
@@ -15,6 +16,8 @@ function App(){
   const clickProductList = () => {
     navigate("/Product")
   }
+
+  const id = "aabbcc";
 
   return (
     <div>
@@ -47,6 +50,8 @@ function App(){
         <NavLink to="/Mine">我的</NavLink>
         <NavLink to="/Login">登录</NavLink>
         <NavLink to="/User">用户</NavLink>
+        {/* detail后面传入参数 */}
+        <NavLink to={`/detail/${id}`}>详情</NavLink>
 
         <button onClick={e=>clickProductList()}>点击商品列表按钮</button>
 
@@ -59,6 +64,8 @@ function App(){
           <Route path='/Login' element={<Login/>}/>
           <Route path='/User' element={<User/>}/>
           <Route path='/Product' element={<ProductList/>}/>
+          {/* detail后面可以接受一个id参数 */}
+          <Route path='/detail/:id' element={<Detail/>}/>
           <Route element={<NoMatch/>}/>
         </Routes>
     </div>
