@@ -9,6 +9,7 @@ import Login from './pages/Login'
 import User from './pages/User'
 import ProductList from './pages/ProductList'
 import Detail from './pages/Detail'
+import Detail2 from './pages/Detail2'
 
 function App(){
   let navigate = useNavigate();
@@ -52,6 +53,7 @@ function App(){
         <NavLink to="/User">用户</NavLink>
         {/* detail后面传入参数 */}
         <NavLink to={`/detail/${id}`}>详情</NavLink>
+        <NavLink to={'/detail2?grade=10&type=11'} state={{ name : 'evan', age : 20, sex: 'male' }}>详情2</NavLink>
 
         <button onClick={e=>clickProductList()}>点击商品列表按钮</button>
 
@@ -66,6 +68,7 @@ function App(){
           <Route path='/Product' element={<ProductList/>}/>
           {/* detail后面可以接受一个id参数 */}
           <Route path='/detail/:id' element={<Detail/>}/>
+          <Route path='/detail2' element={<Detail2/>}/>
           <Route element={<NoMatch/>}/>
         </Routes>
     </div>
