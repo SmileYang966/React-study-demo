@@ -24,7 +24,8 @@ import './source/css/index.css'
 // import App from './source/17-devtools-saga-reducer拆分/index'
 // import App from './source/18-中间件原理/index';
 // import App from './source/19-react-redux-reducer拆分/index';
-import App from './source/20-react-router的使用/index'
+// import App from './source/20-react-router的使用/index'
+import App from './source/21-hooks/index'
 import { BrowserRouter} from 'react-router-dom'
 
 
