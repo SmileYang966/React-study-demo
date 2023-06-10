@@ -8,7 +8,9 @@ import React, { createContext, useState, View } from 'react'
 // import Profile from './05-useReducer的使用/Profile';
 
 // import UseCallBackDemo from './06-useCallback使用/01-useCallback不能进行性能优化';
-import UseCallBackDemo from './06-useCallback使用/02-useCallback进行性能优化';
+// import UseCallBackDemo from './06-useCallback使用/02-useCallback进行性能优化';
+// import UseMemoDemo from './07-useMemo的使用/01-useMemo复杂计数的应用'
+import MemoHookDemo02 from './07-useMemo的使用/02-useMemo传入子组件应用类型'
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
@@ -42,7 +44,11 @@ export default function App() {
         </div>
         */
        
-        <UseCallBackDemo/>
+        // <UseCallBackDemo/>
+
+        // <UseMemoDemo/>
+
+        <MemoHookDemo02/>
       )
     }
     <button onClick={()=>{
