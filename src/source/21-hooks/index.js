@@ -14,6 +14,8 @@ import MemoHookDemo02 from './07-useMemo的使用/02-useMemo传入子组件应�
 import UseRefDemo from './08-useRef/01-useRef引用DOM';
 import UseRefDemo1 from './08-useRef/02-useRef引用其它数据';
 import ForwardRefDemo from './09-useImperativeHandle/01-ForwardRef用法';
+import UseEffectCounterDemo from './10-useLayoutEffect的使用/01-useEffect的count修改'
+import UseLayoutEffectCounterDemo2 from './10-useLayoutEffect的使用/02-useLayoutEffect的使用'
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
@@ -55,7 +57,11 @@ export default function App() {
 
         // <UseRefDemo1/>
 
-        <ForwardRefDemo/>
+        // <ForwardRefDemo/>
+
+        // <UseEffectCounterDemo/>
+
+        <UseLayoutEffectCounterDemo2/>
       )
     }
     <button onClick={()=>{
