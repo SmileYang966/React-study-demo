@@ -11,6 +11,8 @@ import React, { createContext, useState, View } from 'react'
 import UseCallBackDemo from './06-useCallback使用/02-useCallback进行性能优化';
 // import UseMemoDemo from './07-useMemo的使用/01-useMemo复杂计数的应用'
 import MemoHookDemo02 from './07-useMemo的使用/02-useMemo传入子组件应用类型'
+import UseRefDemo from './08-useRef/01-useRef引用DOM';
+import UseRefDemo1 from './08-useRef/02-useRef引用其它数据';
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
@@ -48,7 +50,9 @@ export default function App() {
 
         // <UseMemoDemo/>
 
-        <MemoHookDemo02/>
+        // <MemoHookDemo02/>
+
+        <UseRefDemo1/>
       )
     }
     <button onClick={()=>{
