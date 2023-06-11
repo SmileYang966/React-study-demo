@@ -16,6 +16,7 @@ import UseRefDemo1 from './08-useRef/02-useRef引用其它数据';
 import ForwardRefDemo from './09-useImperativeHandle/01-ForwardRef用法';
 import UseEffectCounterDemo from './10-useLayoutEffect的使用/01-useEffect的count修改'
 import UseLayoutEffectCounterDemo2 from './10-useLayoutEffect的使用/02-useLayoutEffect的使用'
+import CustomLifeHookDemo01 from './11-自定义Hook/01-认识自定义hook'
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
@@ -61,7 +62,9 @@ export default function App() {
 
         // <UseEffectCounterDemo/>
 
-        <UseLayoutEffectCounterDemo2/>
+        // <UseLayoutEffectCounterDemo2/>
+
+        <CustomLifeHookDemo01/>
       )
     }
     <button onClick={()=>{
