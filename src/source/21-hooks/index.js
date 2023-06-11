@@ -17,10 +17,12 @@ import ForwardRefDemo from './09-useImperativeHandle/01-ForwardRef用法';
 import UseEffectCounterDemo from './10-useLayoutEffect的使用/01-useEffect的count修改'
 import UseLayoutEffectCounterDemo2 from './10-useLayoutEffect的使用/02-useLayoutEffect的使用'
 import CustomLifeHookDemo01 from './11-自定义Hook/01-认识自定义hook'
+import CustomHookContextShare from './11-自定义Hook/02-自定义hook练习-context共享'
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
 const ThemeContext = createContext();
+const TokenContext = createContext();
 
 export default function App() {
 
@@ -64,7 +66,13 @@ export default function App() {
 
         // <UseLayoutEffectCounterDemo2/>
 
-        <CustomLifeHookDemo01/>
+        // <CustomLifeHookDemo01/>
+
+        <UserContext.Provider value={{'name' : 'Evan','age':20}}>
+          <TokenContext.Provider value={{'token' : 'abdefk123sfdsflj'}}>
+            <CustomHookContextShare/>
+          </TokenContext.Provider>
+        </UserContext.Provider>
       )
     }
     <button onClick={()=>{
@@ -78,5 +86,6 @@ export default function App() {
 
 export {
   UserContext,
-  ThemeContext
+  ThemeContext,
+  TokenContext
 }
