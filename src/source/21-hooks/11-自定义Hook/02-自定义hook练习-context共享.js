@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 // 创建共享的useUserContext，从外部文件导入
-import useUserContext from './User-hook'
+import useUserContext from './customHooks/User-hook'
 
 export default function CustomHookContextShare() {
 

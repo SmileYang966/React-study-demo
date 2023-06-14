@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import usePositionHook from './Position-hook';
+import usePositionHook from './customHooks/Position-hook';
 
 export default function CustomHookScrollPosition() {
 

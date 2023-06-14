@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UserContext, TokenContext } from "../index";
+import { UserContext, TokenContext } from "../../index";
 
 function useUserContext(){
   const userCtx = useContext(UserContext);

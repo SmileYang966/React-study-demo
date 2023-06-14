@@ -19,6 +19,7 @@ import UseLayoutEffectCounterDemo2 from './10-useLayoutEffect的使用/02-useLay
 import CustomLifeHookDemo01 from './11-自定义Hook/01-认识自定义hook'
 import CustomHookContextShare from './11-自定义Hook/02-自定义hook练习-context共享'
 import CustomHookScrollPosition from './11-自定义Hook/03-自定义hook练习-获取滚动位置'
+import CustomLocalStorageHook from './11-自定义Hook/04-自定义hook练习-localstorage存储'
 
 // 创建两个context，准备去共享数据
 const UserContext = createContext();
@@ -77,7 +78,9 @@ export default function App() {
         </UserContext.Provider>
         */
 
-        <CustomHookScrollPosition/>
+        // <CustomHookScrollPosition/>
+
+        <CustomLocalStorageHook/>
       )
     }
     <button onClick={()=>{
